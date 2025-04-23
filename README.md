@@ -1,0 +1,2 @@
+# TikoKalenteri
+Johdanto ohjelmistokehityksen Kesäkalenteri
