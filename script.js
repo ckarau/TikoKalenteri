@@ -19,12 +19,30 @@ const calendar = document.getElementById('calendar');
 weeks.forEach(({ week, date, content }) => {
     const hatch = document.createElement('div');
     hatch.classList.add('hatch');
-    hatch.textContent = week;
+    
+    // Muotoillaan päivämäärä suomalaisessa muodossa
+    const formattedDate = new Date(date).toLocaleDateString('fi-FI', {
+        day: 'numeric',
+        month: 'numeric'
+    });
+    
+    hatch.innerHTML = `
+        <div class="hatch-content">
+            <div class="week-number">${week}</div>
+            <div class="date">${formattedDate}</div>
+        </div>
+    `;
 
     hatch.addEventListener('click', () => {
         if (!hatch.classList.contains('open')) {
             hatch.classList.add('open');
-            hatch.innerHTML = `<p>${content}</p>`;
+            hatch.innerHTML = `
+                <div class="hatch-content">
+                    <div class="week-number">${week}</div>
+                    <div class="date">${formattedDate}</div>
+                    <div class="content">${content}</div>
+                </div>
+            `;
         }
     });
 
