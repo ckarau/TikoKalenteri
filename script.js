@@ -1,8 +1,8 @@
 const weeks = [
-    { week: 1, date: '2025-05-19', content: 'Nauti uudesta vuodesta kesällä!' },
-    { week: 2, date: '2025-05-26', content: 'Käy kauppakeskukseissa!' },
-    { week: 3, date: '2025-06-02', content: 'Löydä uusia leirintäpaikkoja!' },
-    { week: 4, date: '2025-06-09', content: 'Osallistu kesämetsästykseen!' },
+    { week: 1, date: '2025-05-19', content: 'Nauti tästä kesäsätä Tokoinrannassa!' },
+    { week: 2, date: '2025-05-26', content: 'Käy Itiksessä!' },
+    { week: 3, date: '2025-06-02', content: 'Matkaa Kaunissaareen!' },
+    { week: 4, date: '2025-06-09', content: 'Käy ongella Vanhankaupunginlahdella!' },
     { week: 5, date: '2025-06-16', content: 'Tutustu Helsingin museoihin!' },
     { week: 6, date: '2025-06-23', content: 'Käy Sitratorilla!' },
     { week: 7, date: '2025-06-30', content: 'Järjestä piknik Suomenlinnassa!' },
