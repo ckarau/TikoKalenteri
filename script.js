@@ -7,11 +7,11 @@ const weeks = [
     { week: 6, date: '2025-06-23', content: 'Käy Sitratorilla!' },
     { week: 7, date: '2025-06-30', content: 'Järjestä piknik Suomenlinnassa!' },
     { week: 8, date: '2025-07-07', content: 'Osta Alepasta purjo!' },
-    { week: 9, date: '2025-07-14', content: 'Käy Helsingin satamalla!' },
-    { week: 10, date: '2025-07-21', content: 'Löydä uusia reittiä jalankulkimiseen!' },
+    { week: 9, date: '2025-07-14', content: 'Käy Eteläsatamassa!' },
+    { week: 10, date: '2025-07-21', content: 'Löydä uusia reittejä jalankulkemiseen!' },
     { week: 11, date: '2025-07-28', content: 'Tutustu Helsingin teattereihin!' },
     { week: 12, date: '2025-08-04', content: 'Käy Nuuksion puistoissa!' },
-    { week: 13, date: '2025-08-11', content: 'Päättöviikko kesällä!' }
+    { week: 13, date: '2025-08-11', content: 'Nauti kesän lämmöstä ystävien kanssa!' }
 ];
 
 const calendar = document.getElementById('calendar');
