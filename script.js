@@ -15,26 +15,18 @@ const weeks = [
 ];
 
 const calendar = document.getElementById('calendar');
-const today = new Date();
 
 weeks.forEach(({ week, date, content }) => {
     const hatch = document.createElement('div');
     hatch.classList.add('hatch');
     hatch.textContent = week;
 
-    const hatchDate = new Date(date);
-
-    if (hatchDate <= today) {
-        hatch.addEventListener('click', () => {
-            if (!hatch.classList.contains('open')) {
-                hatch.classList.add('open');
-                hatch.innerHTML = `<p>${content}</p>`;
-            }
-        });
-    } else {
-        hatch.classList.add('locked');
-        hatch.innerHTML = `<p>${week}</p>`;
-    }
+    hatch.addEventListener('click', () => {
+        if (!hatch.classList.contains('open')) {
+            hatch.classList.add('open');
+            hatch.innerHTML = `<p>${content}</p>`;
+        }
+    });
 
     calendar.appendChild(hatch);
 });
